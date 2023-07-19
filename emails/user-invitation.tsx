@@ -27,10 +27,18 @@ export const StripeWelcomeEmail = () => {
           href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Mono:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+        <style type="text/css">
+          {`@media only screen and (max-width: 600px) {
+          .container {padding: 40px 24px!important;}
+          .title {margin: 24px 0 0!important;}
+          .main-content {padding: 56px 0!important;}
+          .cta-button {margin-top: 56px!important;}
+          }`}
+        </style>
       </Head>
       <Preview>You have been invited to Beagle</Preview>
       <Body style={main}>
-        <Container style={container}>
+        <Container style={container} className="container">
           <Section>
             <Img
               src="http://cdn.mcauto-images-production.sendgrid.net/aa869b07e6579d73/e7e35049-6510-4bd9-a430-820ebb6b8705/153x50.png"
@@ -38,8 +46,10 @@ export const StripeWelcomeEmail = () => {
               height="50"
               alt="Beagle"
             />
-            <Text style={title}>Join your team on Beagle</Text>
-            <Section style={mainContent}>
+            <Text style={title} className="title">
+              Join your team on Beagle
+            </Text>
+            <Section style={mainContent} className="main-content">
               <Text style={paragraph}>
                 Hi there,
                 <br />
