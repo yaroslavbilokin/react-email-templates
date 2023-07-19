@@ -41,7 +41,7 @@ export const StripeWelcomeEmail = () => {
               height="50"
               alt="Beagle"
             />
-            <Text style={heading}>Join your team on Beagle</Text>
+            <Text style={title}>Join your team on Beagle</Text>
             <Section style={mainContent}>
               <Text style={paragraph}>
                 Hi there,
@@ -68,7 +68,7 @@ export const StripeWelcomeEmail = () => {
             </Section>
             <Hr style={hr} />
             <Section style={footer}>
-              <Text style={heading2}>Beagle</Text>
+              <Text style={heading}>Beagle</Text>
               <Text style={subheading}>Cruelty–free eDiscovery</Text>
               <Text style={details}>
                 Discover Beagle
@@ -112,9 +112,9 @@ const container = {
   maxWidth: "640px",
 };
 
-const heading = {
+const title = {
   color: "#14142B",
-  fontFamily: "Archivo Black, sans-serif",
+  fontFamily: "Archivo Black, Arial Black, sans-serif",
   fontSize: "52px",
   fontWeight: 400,
   lineHeight: "64px",
@@ -128,7 +128,7 @@ const mainContent = {
 
 const paragraph = {
   color: "#434355",
-  fontFamily: "Roboto Mono, sans-serif",
+  fontFamily: "Roboto Mono, Courier, sans-serif",
   fontSize: "16px",
   fontWeight: 400,
   lineHeight: "24px",
@@ -137,7 +137,7 @@ const paragraph = {
 
 const link = {
   color: "#696BFF",
-  fontFamily: "Roboto Mono, sans-serif",
+  fontFamily: "Roboto Mono, Courier, sans-serif",
   fontSize: "16px",
   fontWeight: 700,
   lineHeight: "24px",
@@ -145,7 +145,7 @@ const link = {
 
 const email = {
   color: "#434355",
-  fontFamily: "Roboto Mono, sans-serif",
+  fontFamily: "Roboto Mono, Courier, sans-serif",
   fontSize: "16px",
   fontWeight: 400,
   lineHeight: "24px",
@@ -158,7 +158,7 @@ const button = {
   background: "#696BFF",
   marginTop: "60px",
   color: "#FFF",
-  fontFamily: "Archivo Black, sans-serif",
+  fontFamily: "Archivo Black, Arial Black, sans-serif",
   fontSize: "16px",
   fontWeight: 400,
   lineHeight: "24px",
@@ -175,9 +175,9 @@ const footer = {
   lineHeight: "16px",
 };
 
-const heading2 = {
+const heading = {
   color: "#14142B",
-  fontFamily: "Archivo Black, sans-serif",
+  fontFamily: "Archivo Black, Arial Black, sans-serif",
   fontSize: "20px",
   lineHeight: "24px",
   fontWeight: 400,
@@ -187,7 +187,7 @@ const heading2 = {
 
 const subheading = {
   color: "#14142B",
-  fontFamily: "Roboto Mono, sans-serif",
+  fontFamily: "Roboto Mono, Courier, sans-serif",
   fontSize: "12px",
   lineHeight: "14.4px",
   fontWeight: 500,
@@ -195,7 +195,7 @@ const subheading = {
 
 const details = {
   color: "#80808D",
-  fontFamily: "Roboto Mono, sans-serif",
+  fontFamily: "Roboto Mono, Courier, sans-serif",
   fontSize: "12px",
   lineHeight: "20px",
   fontWeight: 400,
@@ -205,7 +205,7 @@ const details = {
 
 const navLink = {
   color: "#80808D",
-  fontFamily: "Roboto Mono, sans-serif",
+  fontFamily: "Roboto Mono, Courier, sans-serif",
   fontSize: "10px",
   lineHeight: "16px",
   fontWeight: 400,
