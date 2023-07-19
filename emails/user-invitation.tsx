@@ -4,7 +4,6 @@ import {
   Button,
   Container,
   Head,
-  Hr,
   Html,
   Img,
   Link,
@@ -12,14 +11,12 @@ import {
   Section,
   Text,
 } from "@react-email/components";
+import Footer from "./Footer";
 
 export const StripeWelcomeEmail = () => {
   const userName = "{{name}}";
   const userWorkEmail = "{{workEmail}}";
   const joinLink = "https://muzzle.vercel.app/";
-  const helpLink = "https://muzzle.vercel.app/";
-  const termsLink = "https://muzzle.vercel.app/";
-  const unsubscribeLink = "https://muzzle.vercel.app/";
 
   return (
     <Html>
@@ -54,44 +51,18 @@ export const StripeWelcomeEmail = () => {
                 . Accept the invitation now and let's work together on this
                 legal case!
               </Text>
-              <Section>
-                <Button
-                  pX={24}
-                  pY={16}
-                  style={button}
-                  href={joinLink}
-                  className="cta-button"
-                >
-                  Join {userName} on Beagle
-                </Button>
-              </Section>
-            </Section>
-            <Hr style={hr} />
-            <Section style={footer}>
-              <Text style={heading}>Beagle</Text>
-              <Text style={subheading}>Cruelty–free eDiscovery</Text>
-              <Text style={details}>
-                Discover Beagle
-                <br />
-                New York, USA
-                <br />
-                ©2022 All rights reserved.
-              </Text>
-              <Text>
-                <Link style={navLink} href={helpLink}>
-                  Help
-                </Link>
-                <Link style={dot}></Link>
-                <Link style={navLink} href={termsLink}>
-                  Terms and Privacy
-                </Link>
-                <Link style={dot}></Link>
-                <Link style={navLink} href={unsubscribeLink}>
-                  Unsubscribe
-                </Link>
-              </Text>
+              <Button
+                pX={24}
+                pY={16}
+                style={button}
+                href={joinLink}
+                className="cta-button"
+              >
+                Join {userName} on Beagle
+              </Button>
             </Section>
           </Section>
+          <Footer />
         </Container>
       </Body>
     </Html>
@@ -162,62 +133,4 @@ const button = {
   fontSize: "16px",
   fontWeight: 400,
   lineHeight: "24px",
-};
-
-const hr = {
-  borderColor: "#E3E3E6",
-  marginBottom: "16px",
-};
-
-const footer = {
-  color: "#8898aa",
-  fontSize: "12px",
-  lineHeight: "16px",
-};
-
-const heading = {
-  color: "#14142B",
-  fontFamily: "Archivo Black, Arial Black, sans-serif",
-  fontSize: "20px",
-  lineHeight: "24px",
-  fontWeight: 400,
-  letterSpacing: "-0.2px",
-  marginBottom: "4px",
-};
-
-const subheading = {
-  color: "#14142B",
-  fontFamily: "Roboto Mono, Courier, sans-serif",
-  fontSize: "12px",
-  lineHeight: "14.4px",
-  fontWeight: 500,
-};
-
-const details = {
-  color: "#80808D",
-  fontFamily: "Roboto Mono, Courier, sans-serif",
-  fontSize: "12px",
-  lineHeight: "20px",
-  fontWeight: 400,
-  letterSpacing: "-0.2px",
-  margin: "16px 0",
-};
-
-const navLink = {
-  color: "#80808D",
-  fontFamily: "Roboto Mono, Courier, sans-serif",
-  fontSize: "10px",
-  lineHeight: "16px",
-  fontWeight: 400,
-  textDecoration: "underline",
-  cursor: "pointer",
-};
-
-const dot = {
-  display: "inline-block",
-  margin: "0 8px",
-  width: "4px",
-  height: "4px",
-  borderRadius: "20px",
-  backgroundColor: "#E3E3E6",
 };
