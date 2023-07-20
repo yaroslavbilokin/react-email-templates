@@ -99,7 +99,7 @@ const title = {
   fontWeight: 400,
   lineHeight: "64px",
   letterSpacing: "-2.6px",
-  margin: "40px 0 0",
+  margin: "40px 20px 0 0",
 };
 
 const mainContent = {
