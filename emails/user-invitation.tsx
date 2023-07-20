@@ -83,7 +83,8 @@ export default StripeWelcomeEmail;
 const main = {
   backgroundColor: "#ffffff",
   fontFamily:
-    '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
+    'Roboto Mono,Courier,sans-serif,Roboto,"Helvetica Neue",Ubuntu,sans-serif',
+  margin: 0,
 };
 
 const container = {
