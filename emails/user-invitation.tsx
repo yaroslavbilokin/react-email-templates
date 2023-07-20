@@ -16,7 +16,7 @@ import Footer from "./Footer";
 export const StripeWelcomeEmail = () => {
   const userName = "{{name}}";
   const userWorkEmail = "{{workEmail}}";
-  const joinLink = "https://muzzle.vercel.app/";
+  const inviteLink = "{{inviteUrl}}";
 
   return (
     <Html>
@@ -53,19 +53,18 @@ export const StripeWelcomeEmail = () => {
               <Text style={paragraph}>
                 Hi there,
                 <br />
-                {userName} <Link style={email}>{userWorkEmail}</Link> has
-                invited you to{" "}
-                <Link style={link} href={joinLink}>
-                  Beagle
-                </Link>
-                . Accept the invitation now and let's work together on this
-                legal case!
+                {userName}{" "}
+                <Link style={email} href={`mailto:${userWorkEmail}`}>
+                  {userWorkEmail}
+                </Link>{" "}
+                has invited you to <Link style={brandText}>Beagle</Link>. Accept
+                the invitation now and let's work together on this legal case!
               </Text>
               <Button
                 pX={24}
                 pY={16}
                 style={button}
-                href={joinLink}
+                href={inviteLink}
                 className="cta-button"
               >
                 Join {userName} on Beagle
@@ -116,7 +115,7 @@ const paragraph = {
   textAlign: "left" as const,
 };
 
-const link = {
+const brandText = {
   color: "#696BFF",
   fontFamily: "Roboto Mono, Courier, sans-serif",
   fontSize: "16px",
@@ -125,7 +124,7 @@ const link = {
 };
 
 const email = {
-  color: "#434355",
+  color: "#434355!important",
   fontFamily: "Roboto Mono, Courier, sans-serif",
   fontSize: "16px",
   fontWeight: 400,

@@ -1,4 +1,5 @@
 {
   "name": "John",
-  "workEmail": "john@beagle.com"
+  "workEmail": "john@beagle.com",
+  "inviteUrl": "https://muzzle.vercel.app/"
 }
