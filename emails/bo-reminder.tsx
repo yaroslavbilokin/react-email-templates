@@ -46,11 +46,11 @@ export const BoReminder = () => {
                             <Text style={paragraph}>
                                 Hi there,
                                 <br />
-                                Just a friendly reminder about the upcoming deadline for submitting your data for the
+                                just a friendly reminder about the upcoming deadline for submitting your data for the
                                 "{reportName}" report as a Beneficial Owner.
                             </Text>
 
-                            <Text style={deadlineParagraph}>The deadline is: {reportDeadline}.</Text>
+                            <Text style={deadlineParagraph}>The deadline is: {reportDeadline}</Text>
 
                             <Text style={paragraph}>
                                 Please proceed to provide your personal data.
