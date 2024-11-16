@@ -48,7 +48,8 @@ export const colors = {
   surfaceLightPrimary: "#EDF0F7",
   white: "#FFFFFF",
   textBlackPrimary: "#070707",
-  buttonBackgroundPrimary: "#BEFF00"
+  buttonBackgroundPrimary: "#BEFF00",
+  borderColor: "#0808081F"
 };
 
 const bodyStyle = {
@@ -130,7 +131,7 @@ const addressTextStyle: React.CSSProperties = {
   margin: 0,
   fontSize: "14px",
   lineHeight: "1.2",
-  fontWeight: 500,
+  fontWeight: 400,
   color: colors.textBlackPrimary,
   opacity: 0.6,
 };
@@ -140,7 +141,7 @@ const mobileAddressTextContainerStyle: React.CSSProperties = {
   margin: 0,
   fontSize: "14px",
   lineHeight: "1.2",
-  fontWeight: 500,
+  fontWeight: 400,
   color: colors.textBlackPrimary,
 };
 
@@ -189,7 +190,7 @@ export const RaLayout = ({ children, additionalFooter }: { children: React.React
   const facebookUrl = "https://www.facebook.com/royaltyteamgear";
 
   return (
-    <Html>
+    <Html style={{backgroundColor: colors.surfaceLightPrimary}}>
       <Head>
         <style type="text/css">
           {`

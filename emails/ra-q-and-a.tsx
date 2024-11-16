@@ -45,6 +45,7 @@ const buttonStyle: React.CSSProperties = {
   backgroundColor: colors.buttonBackgroundPrimary,
   borderRadius: "8px",
   width: "100%",
+  cursor: "pointer",    
 };
 
 const buttonContainerStyle: React.CSSProperties = {
