@@ -381,8 +381,8 @@ const metricItemTitle = {
 const metricsBox = {
   width: '100%',
   borderRadius: '10px',
-  backgroundColor: '#f8f9fa',
-  boxShadow: '0 2px 4px rgba(255, 108, 53, 0.15)',
+  backgroundColor: 'rgba(250, 211, 112, 0.015)',
+  boxShadow: '0 2px 4px rgba(255, 108, 53, 0.1)',
   border: '1px solid #eaeaea',
   marginTop: 16,
 };
@@ -422,7 +422,7 @@ const percentageWorsened = {
 };
 
 const notesBulletListBox = {
-  backgroundColor: '#f8f9fa',
+  backgroundColor: 'rgba(250, 211, 112, 0.015)',
   borderLeft: '4px solid rgba(255, 108, 53, 1)',
   padding: '15px 20px',
   margin: '20px 0',

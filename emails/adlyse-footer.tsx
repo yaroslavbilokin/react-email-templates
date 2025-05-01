@@ -70,11 +70,11 @@ const contacts = {
 };
 
 const footer = {
-  backgroundColor: '#f8f9fa',
+  backgroundColor: 'rgba(255, 108, 53, 0.015)',
   color: '#757575',
   padding: '25px',
   fontSize: '13px',
-  borderTop: '1px solid #eaeaea',
+  borderTop: '1px solid rgba(255, 108, 53, 0.5)',
 };
 
 const link = {
