@@ -1,13 +1,13 @@
-import * as React from "react";
-import { Section } from "@react-email/section";
-import { Text } from "@react-email/text";
-import { Link } from "@react-email/link";
-import { Hr } from "@react-email/components";
+import * as React from 'react';
+import { Section } from '@react-email/section';
+import { Text } from '@react-email/text';
+import { Link } from '@react-email/link';
+import { Hr } from '@react-email/components';
 
 const Footer = () => {
-  const helpLink = "https://muzzle.vercel.app/";
-  const termsLink = "https://muzzle.vercel.app/";
-  const unsubscribeLink = "https://muzzle.vercel.app/";
+  const helpLink = 'https://muzzle.vercel.app/';
+  const termsLink = 'https://muzzle.vercel.app/';
+  const unsubscribeLink = 'https://muzzle.vercel.app/';
 
   return (
     <Section>
@@ -41,53 +41,53 @@ const Footer = () => {
 export default Footer;
 
 const hr = {
-  borderColor: "#E3E3E6",
-  margin: "0 0 16px",
+  borderColor: '#E3E3E6',
+  margin: '0 0 16px',
 };
 
 const heading = {
-  color: "#14142B",
-  fontFamily: "Archivo Black, Arial Black, sans-serif",
-  fontSize: "20px",
-  lineHeight: "24px",
+  color: '#14142B',
+  fontFamily: 'Archivo Black, Arial Black, sans-serif',
+  fontSize: '20px',
+  lineHeight: '24px',
   fontWeight: 400,
-  letterSpacing: "-0.2px",
-  margin: "0 0 4px",
+  letterSpacing: '-0.2px',
+  margin: '0 0 4px',
 };
 
 const subheading = {
-  color: "#14142B",
-  fontFamily: "Roboto Mono, Courier, sans-serif",
-  fontSize: "12px",
-  lineHeight: "14.4px",
+  color: '#14142B',
+  fontFamily: 'Roboto Mono, Courier, sans-serif',
+  fontSize: '12px',
+  lineHeight: '14.4px',
   fontWeight: 500,
 };
 
 const details = {
-  color: "#80808D",
-  fontFamily: "Roboto Mono, Courier, sans-serif",
-  fontSize: "12px",
-  lineHeight: "20px",
+  color: '#80808D',
+  fontFamily: 'Roboto Mono, Courier, sans-serif',
+  fontSize: '12px',
+  lineHeight: '20px',
   fontWeight: 400,
-  letterSpacing: "-0.2px",
-  margin: "16px 0",
+  letterSpacing: '-0.2px',
+  margin: '16px 0',
 };
 
 const navLink = {
-  color: "#80808D",
-  fontFamily: "Roboto Mono, Courier, sans-serif",
-  fontSize: "10px",
-  lineHeight: "16px",
+  color: '#80808D',
+  fontFamily: 'Roboto Mono, Courier, sans-serif',
+  fontSize: '10px',
+  lineHeight: '16px',
   fontWeight: 400,
-  textDecoration: "underline",
-  cursor: "pointer",
+  textDecoration: 'underline',
+  cursor: 'pointer',
 };
 
 const dot = {
-  display: "inline-block",
-  margin: "0 8px",
-  width: "4px",
-  height: "4px",
-  borderRadius: "20px",
-  backgroundColor: "#E3E3E6",
+  display: 'inline-block',
+  margin: '0 8px',
+  width: '4px',
+  height: '4px',
+  borderRadius: '20px',
+  backgroundColor: '#E3E3E6',
 };

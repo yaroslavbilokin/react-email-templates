@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   Body,
   Column,
@@ -10,23 +10,22 @@ import {
   Section,
   Text,
   Link,
-} from "@react-email/components";
+} from '@react-email/components';
 
-export const FRONTEND_URL = "https://royalty-apparel-fe-snowy.vercel.app";
+export const FRONTEND_URL = 'https://royalty-apparel-fe-snowy.vercel.app';
 
-const Font = ({ 
-    webFont,
-    fontStyle = 'normal',
-    fontFamily,
-    fontWeight = 400,
-    fallbackFontFamily,
+const Font = ({
+  webFont,
+  fontStyle = 'normal',
+  fontFamily,
+  fontWeight = 400,
+  fallbackFontFamily,
 }) => {
-    const src = webFont ? `src: url(${webFont.url}) format(${webFont.format});` : "";
+  const src = webFont ? `src: url(${webFont.url}) format(${webFont.format});` : '';
 
-    return (
-        <style>
-        {
-            `
+  return (
+    <style>
+      {`
             @font-face {
                 font-style: ${fontStyle};
                 font-family: ${fontFamily};
@@ -36,146 +35,151 @@ const Font = ({
             }
 
             * {
-                font-family: ${fontFamily}, ${Array.isArray(fallbackFontFamily) ? fallbackFontFamily.join(", ") : fallbackFontFamily};
+                font-family: ${fontFamily}, ${Array.isArray(fallbackFontFamily) ? fallbackFontFamily.join(', ') : fallbackFontFamily};
             }
-            `
-        }
-        </style>
-    )
-}
+            `}
+    </style>
+  );
+};
 
 export const colors = {
-  surfaceLightPrimary: "#EDF0F7",
-  white: "#FFFFFF",
-  textBlackPrimary: "#070707",
-  buttonBackgroundPrimary: "#BEFF00",
-  borderColor: "#0808081F"
+  surfaceLightPrimary: '#EDF0F7',
+  white: '#FFFFFF',
+  textBlackPrimary: '#070707',
+  buttonBackgroundPrimary: '#BEFF00',
+  borderColor: '#0808081F',
 };
 
 const bodyStyle = {
   backgroundColor: colors.surfaceLightPrimary,
-  width: "100%",
-  maxWidth: "600px",
-  margin: "0 auto",
-  fontFamily: "industry, sans-serif",
+  width: '100%',
+  maxWidth: '600px',
+  margin: '0 auto',
+  fontFamily: 'industry, sans-serif',
 } as React.CSSProperties;
 
 const containerStyle = {
-    width: "100%",
-  } as React.CSSProperties;
+  width: '100%',
+} as React.CSSProperties;
 
 const headerContainerStyle: React.CSSProperties = {
-  width: "100%",
-  margin: "25px 0",
+  width: '100%',
+  margin: '25px 0',
 };
 
 const mobileHeaderContainerStyle: React.CSSProperties = {
-  maxWidth: "200px",
-  margin: "20px",
+  maxWidth: '200px',
+  margin: '20px',
 };
 
 const logoIconStyle: React.CSSProperties = {
-  width: "24px",
-  height: "24px",
-  margin: "0 auto",
-  marginBottom: "10px",
+  width: '24px',
+  height: '24px',
+  margin: '0 auto',
+  marginBottom: '10px',
 };
 
 const mobileLogoIconStyle: React.CSSProperties = {
-  width: "32px",
-  height: "32px",
-  margin: "0",
+  width: '32px',
+  height: '32px',
+  margin: '0',
 };
 
 const mobileLogoIconContainerStyle: React.CSSProperties = {
-  width: "44px",
+  width: '44px',
 };
 
 const logoTextStyle: React.CSSProperties = {
-  width: "124px",
-  margin: "0 auto",
+  width: '124px',
+  margin: '0 auto',
 };
 
 const mobileLogoTextStyle: React.CSSProperties = {
-  width: "147px",
-  margin: "0",
+  width: '147px',
+  margin: '0',
 };
 
 const childrenStyle: React.CSSProperties = {
   backgroundColor: colors.white,
-  borderRadius: "12px",
-  width: "100№",
-  margin: "0 4px",
+  borderRadius: '12px',
+  width: '100№',
+  margin: '0 4px',
 };
 
 const footerContainerStyle: React.CSSProperties = {
-  padding: "16px 32px 32px 32px",
+  padding: '16px 32px 32px 32px',
 };
 
 const mobileFooterContainerStyle: React.CSSProperties = {
-  padding: "20px",
+  padding: '20px',
 };
 
 const socialLinksSectionStyle: React.CSSProperties = {
-  marginTop: "20px",
-  maxWidth: "220px",
+  marginTop: '20px',
+  maxWidth: '220px',
 };
 
 const mobileSocialLinksSectionStyle: React.CSSProperties = {
-  maxWidth: "225px",
-  margin: "0",
+  maxWidth: '225px',
+  margin: '0',
 };
 
 const addressTextStyle: React.CSSProperties = {
-  fontFamily: "industry, sans-serif",
+  fontFamily: 'industry, sans-serif',
   margin: 0,
-  fontSize: "14px",
-  lineHeight: "1.2",
+  fontSize: '14px',
+  lineHeight: '1.2',
   fontWeight: 400,
   color: colors.textBlackPrimary,
   opacity: 0.6,
 };
 
 const mobileAddressTextContainerStyle: React.CSSProperties = {
-  fontFamily: "industry, sans-serif",
+  fontFamily: 'industry, sans-serif',
   margin: 0,
-  fontSize: "14px",
-  lineHeight: "1.2",
+  fontSize: '14px',
+  lineHeight: '1.2',
   fontWeight: 400,
   color: colors.textBlackPrimary,
 };
 
 const mobileAddressTextStyle: React.CSSProperties = {
-  marginBottom: "25px",
+  marginBottom: '25px',
 };
 
 const test: React.CSSProperties = {
-  display: "inline-block",
+  display: 'inline-block',
 };
 
 const socialImageLinkStyle: React.CSSProperties = {
-  width: "24px",
-  height: "24px",
-  margin: "0 8px",
-  cursor: "pointer",
+  width: '24px',
+  height: '24px',
+  margin: '0 8px',
+  cursor: 'pointer',
 };
 
 const mobileSocialImageLinkStyle: React.CSSProperties = {
-  width: "24px",
-  height: "24px",
-  margin: "0 8px",
-  cursor: "pointer",
+  width: '24px',
+  height: '24px',
+  margin: '0 8px',
+  cursor: 'pointer',
 };
 
 const mobileSocialImageLinkContainerStyle: React.CSSProperties = {
-  width: "38px",
-  height: "38px",
+  width: '38px',
+  height: '38px',
   backgroundColor: colors.white,
-  borderRadius: "100%",
-  cursor: "pointer",
+  borderRadius: '100%',
+  cursor: 'pointer',
 };
 
-export const RaLayout = ({ children, additionalFooter }: { children: React.ReactNode; additionalFooter?: React.ReactNode }) => {
+export const RaLayout = ({
+  children,
+  additionalFooter,
+}: {
+  children: React.ReactNode;
+  additionalFooter?: React.ReactNode;
+}) => {
   const logoIconUrl = `${FRONTEND_URL}/images/email-logo-icon.png`;
   const logoTextUrl = `${FRONTEND_URL}/images/email-logo-text.png`;
   const facebookIconUrl = `${FRONTEND_URL}/images/facebook.png`;
@@ -183,14 +187,14 @@ export const RaLayout = ({ children, additionalFooter }: { children: React.React
   const xIconUrl = `${FRONTEND_URL}/images/x.png`;
   const tiktokIconUrl = `${FRONTEND_URL}/images/tiktok.png`;
   const youtubeIconUrl = `${FRONTEND_URL}/images/youtube.png`;
-  const youtubeUrl = "https://www.youtube.com/@royaltyteamgear";
-  const instagramUrl = "https://www.instagram.com/royaltyteamgear";
-  const tiktokUrl = "https://www.tiktok.com/@royaltyteamgear";  
-  const xUrl = "https://x.com/royaltyteamgear";
-  const facebookUrl = "https://www.facebook.com/royaltyteamgear";
+  const youtubeUrl = 'https://www.youtube.com/@royaltyteamgear';
+  const instagramUrl = 'https://www.instagram.com/royaltyteamgear';
+  const tiktokUrl = 'https://www.tiktok.com/@royaltyteamgear';
+  const xUrl = 'https://x.com/royaltyteamgear';
+  const facebookUrl = 'https://www.facebook.com/royaltyteamgear';
 
   return (
-    <Html style={{backgroundColor: colors.surfaceLightPrimary}}>
+    <Html style={{ backgroundColor: colors.surfaceLightPrimary }}>
       <Head>
         <style type="text/css">
           {`
@@ -240,18 +244,8 @@ export const RaLayout = ({ children, additionalFooter }: { children: React.React
       <Body style={bodyStyle}>
         <Container style={containerStyle}>
           <Section style={headerContainerStyle} className="header-container">
-            <Img
-              style={logoIconStyle}
-              src={logoIconUrl}
-              alt="logo icon"
-              className="logo-icon"
-            />
-            <Img
-              style={logoTextStyle}
-              src={logoTextUrl}
-              alt="logo text"
-              className="logo-text"
-            />
+            <Img style={logoIconStyle} src={logoIconUrl} alt="logo icon" className="logo-icon" />
+            <Img style={logoTextStyle} src={logoTextUrl} alt="logo text" className="logo-text" />
           </Section>
 
           <Row style={mobileHeaderContainerStyle} className="mobile-header">
@@ -273,80 +267,55 @@ export const RaLayout = ({ children, additionalFooter }: { children: React.React
             </Column>
           </Row>
 
-          {children && <Section style={childrenStyle} className="children-container">
+          {children && (
+            <Section style={childrenStyle} className="children-container">
               {children}
             </Section>
-          }
+          )}
         </Container>
 
         {/* TODO: move to props */}
-        {additionalFooter && (
-          <Section>
-            {additionalFooter}
-          </Section>
-        )}
+        {additionalFooter && <Section>{additionalFooter}</Section>}
 
         {/* Desktop Footer */}
         <Container style={footerContainerStyle} className="footer-container">
-          <Section >
+          <Section>
             <Row>
               <Column>
                 <Text style={addressTextStyle}>© 2024 Royaltyteamgear.</Text>
                 <Text style={addressTextStyle}>All rights reserved.</Text>
-                <Text style={addressTextStyle}>
-                  3040 E 12th St, Los Angeles, CA 90023
-                </Text>
+                <Text style={addressTextStyle}>3040 E 12th St, Los Angeles, CA 90023</Text>
               </Column>
 
               <Column>
                 <Row style={socialLinksSectionStyle}>
                   <Column>
                     <Link href={facebookUrl} target="_blank">
-                      <Img
-                        style={socialImageLinkStyle}
-                        src={facebookIconUrl}
-                        alt="facebook"
-                      />
+                      <Img style={socialImageLinkStyle} src={facebookIconUrl} alt="facebook" />
                     </Link>
                   </Column>
 
                   <Column>
                     <Link href={instagramUrl} target="_blank">
-                      <Img
-                        style={socialImageLinkStyle}
-                        src={instagramIconUrl}
-                        alt="instagram"
-                      />
+                      <Img style={socialImageLinkStyle} src={instagramIconUrl} alt="instagram" />
                     </Link>
                   </Column>
 
                   <Column>
                     <Link href={youtubeUrl} target="_blank">
-                      <Img
-                        style={socialImageLinkStyle}
-                        src={youtubeIconUrl}
-                        alt="youtube"
-                      />
+                      <Img style={socialImageLinkStyle} src={youtubeIconUrl} alt="youtube" />
                     </Link>
                   </Column>
 
                   <Column>
                     <Link href={tiktokUrl} target="_blank">
-                      <Img
-                        style={socialImageLinkStyle}
-                        src={tiktokIconUrl}
-                        alt="tiktok"
-                      />
+                      <Img style={socialImageLinkStyle} src={tiktokIconUrl} alt="tiktok" />
                     </Link>
                   </Column>
 
                   <Column>
                     <Link href={xUrl} target="_blank">
-                      <Img
-                        style={socialImageLinkStyle}
-                        src={xIconUrl}
-                        alt="x"
-                      />
+                      <Img style={socialImageLinkStyle} src={xIconUrl} alt="x" />
                     </Link>
                   </Column>
                 </Row>
@@ -357,79 +326,62 @@ export const RaLayout = ({ children, additionalFooter }: { children: React.React
 
         {/* Mobile Footer */}
         <Container style={mobileFooterContainerStyle} className="mobile-footer-container">
-          <Section >
-                <Section style={mobileAddressTextStyle}>
-                <Text style={mobileAddressTextContainerStyle}>© 2024 Royaltyteamgear.</Text>
-                <Text style={mobileAddressTextContainerStyle}>All rights reserved.</Text>
-                <Text style={mobileAddressTextContainerStyle}>
-                  3040 E 12th St, Los Angeles, CA 90023
-                </Text>
-                </Section>
-
-
-                <Row style={mobileSocialLinksSectionStyle}>
-                  <Column>
-                    <Link href={facebookUrl} target="_blank">
-                      <Section style={mobileSocialImageLinkContainerStyle}>
-                        <Img
-                          style={mobileSocialImageLinkStyle}
-                          src={facebookIconUrl}
-                          alt="facebook"
-                        />
-                      </Section>
-                    </Link>
-                  </Column>
-
-                  <Column>
-                    <Link href={instagramUrl} target="_blank">
-                      <Section style={mobileSocialImageLinkContainerStyle}>
-                        <Img
-                          style={mobileSocialImageLinkStyle}
-                          src={instagramIconUrl}
-                          alt="instagram"
-                        />
-                      </Section>
-                    </Link>
-                  </Column>
-
-                  <Column>
-                    <Link href={youtubeUrl} target="_blank">
-                      <Section style={mobileSocialImageLinkContainerStyle}>
-                        <Img
-                          style={mobileSocialImageLinkStyle}
-                          src={youtubeIconUrl}
-                          alt="youtube"
-                        />
-                      </Section>
-                    </Link>
-                  </Column>
-
-                  <Column>
-                    <Link href={tiktokUrl} target="_blank">
-                      <Section style={mobileSocialImageLinkContainerStyle}>
-                        <Img
-                          style={mobileSocialImageLinkStyle}
-                          src={tiktokIconUrl}
-                          alt="tiktok"
-                        />
-                      </Section>
-                    </Link>
-                  </Column>
-
-                  <Column>
-                    <Link href={xUrl} target="_blank">
-                      <Section style={mobileSocialImageLinkContainerStyle}>
-                        <Img
-                          style={mobileSocialImageLinkStyle}
-                          src={xIconUrl}
-                          alt="x"
-                        />
-                      </Section>
-                    </Link>
-                  </Column>
-                </Row>
+          <Section>
+            <Section style={mobileAddressTextStyle}>
+              <Text style={mobileAddressTextContainerStyle}>© 2024 Royaltyteamgear.</Text>
+              <Text style={mobileAddressTextContainerStyle}>All rights reserved.</Text>
+              <Text style={mobileAddressTextContainerStyle}>
+                3040 E 12th St, Los Angeles, CA 90023
+              </Text>
             </Section>
-          </Container>
+
+            <Row style={mobileSocialLinksSectionStyle}>
+              <Column>
+                <Link href={facebookUrl} target="_blank">
+                  <Section style={mobileSocialImageLinkContainerStyle}>
+                    <Img style={mobileSocialImageLinkStyle} src={facebookIconUrl} alt="facebook" />
+                  </Section>
+                </Link>
+              </Column>
+
+              <Column>
+                <Link href={instagramUrl} target="_blank">
+                  <Section style={mobileSocialImageLinkContainerStyle}>
+                    <Img
+                      style={mobileSocialImageLinkStyle}
+                      src={instagramIconUrl}
+                      alt="instagram"
+                    />
+                  </Section>
+                </Link>
+              </Column>
+
+              <Column>
+                <Link href={youtubeUrl} target="_blank">
+                  <Section style={mobileSocialImageLinkContainerStyle}>
+                    <Img style={mobileSocialImageLinkStyle} src={youtubeIconUrl} alt="youtube" />
+                  </Section>
+                </Link>
+              </Column>
+
+              <Column>
+                <Link href={tiktokUrl} target="_blank">
+                  <Section style={mobileSocialImageLinkContainerStyle}>
+                    <Img style={mobileSocialImageLinkStyle} src={tiktokIconUrl} alt="tiktok" />
+                  </Section>
+                </Link>
+              </Column>
+
+              <Column>
+                <Link href={xUrl} target="_blank">
+                  <Section style={mobileSocialImageLinkContainerStyle}>
+                    <Img style={mobileSocialImageLinkStyle} src={xIconUrl} alt="x" />
+                  </Section>
+                </Link>
+              </Column>
+            </Row>
+          </Section>
+        </Container>
       </Body>
     </Html>
   );

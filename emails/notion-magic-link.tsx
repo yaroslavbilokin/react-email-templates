@@ -15,9 +15,7 @@ interface NotionMagicLinkEmailProps {
   loginCode?: string;
 }
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : '';
+const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '';
 
 export const NotionMagicLinkEmail = ({
   loginCode = 'sparo-ndigo-amurt-secan',
@@ -61,21 +59,11 @@ export const NotionMagicLinkEmail = ({
             marginBottom: '38px',
           }}
         >
-          Hint: You can set a permanent password in Settings & members → My
-          account.
+          Hint: You can set a permanent password in Settings & members → My account.
         </Text>
-        <Img
-          src={`${baseUrl}/static/notion-logo.png`}
-          width="32"
-          height="32"
-          alt="Notion's Logo"
-        />
+        <Img src={`${baseUrl}/static/notion-logo.png`} width="32" height="32" alt="Notion's Logo" />
         <Text style={footer}>
-          <Link
-            href="https://notion.so"
-            target="_blank"
-            style={{ ...link, color: '#898989' }}
-          >
+          <Link href="https://notion.so" target="_blank" style={{ ...link, color: '#898989' }}>
             Notion.so
           </Link>
           , the all-in-one-workspace

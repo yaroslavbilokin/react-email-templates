@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   Body,
   Button,
@@ -10,13 +10,13 @@ import {
   Preview,
   Section,
   Text,
-} from "@react-email/components";
-import Footer from "./Footer";
+} from '@react-email/components';
+import Footer from './Footer';
 
 export const StripeWelcomeEmail = () => {
-  const userName = "{{name}}";
-  const userWorkEmail = "{{workEmail}}";
-  const inviteLink = "{{inviteUrl}}";
+  const userName = '{{name}}';
+  const userWorkEmail = '{{workEmail}}';
+  const inviteLink = '{{inviteUrl}}';
 
   return (
     <Html>
@@ -53,20 +53,14 @@ export const StripeWelcomeEmail = () => {
               <Text style={paragraph}>
                 Hi there,
                 <br />
-                {userName}{" "}
+                {userName}{' '}
                 <Link style={email} href={`mailto:${userWorkEmail}`}>
                   {userWorkEmail}
-                </Link>{" "}
-                has invited you to <Link style={brandText}>Beagle</Link>. Accept
-                the invitation now and let's work together on this legal case!
+                </Link>{' '}
+                has invited you to <Link style={brandText}>Beagle</Link>. Accept the invitation now
+                and let's work together on this legal case!
               </Text>
-              <Button
-                pX={24}
-                pY={16}
-                style={button}
-                href={inviteLink}
-                className="cta-button"
-              >
+              <Button pX={24} pY={16} style={button} href={inviteLink} className="cta-button">
                 Join {userName} on Beagle
               </Button>
             </Section>
@@ -81,66 +75,65 @@ export const StripeWelcomeEmail = () => {
 export default StripeWelcomeEmail;
 
 const main = {
-  backgroundColor: "#ffffff",
-  fontFamily:
-    'Roboto Mono,Courier,sans-serif,Roboto,"Helvetica Neue",Ubuntu,sans-serif',
+  backgroundColor: '#ffffff',
+  fontFamily: 'Roboto Mono,Courier,sans-serif,Roboto,"Helvetica Neue",Ubuntu,sans-serif',
   margin: 0,
 };
 
 const container = {
-  backgroundColor: "#ffffff",
-  padding: "40px 80px",
-  maxWidth: "640px",
+  backgroundColor: '#ffffff',
+  padding: '40px 80px',
+  maxWidth: '640px',
 };
 
 const title = {
-  color: "#14142B",
-  fontFamily: "Archivo Black, Arial Black, sans-serif",
-  fontSize: "52px",
+  color: '#14142B',
+  fontFamily: 'Archivo Black, Arial Black, sans-serif',
+  fontSize: '52px',
   fontWeight: 400,
-  lineHeight: "64px",
-  letterSpacing: "-2.6px",
-  margin: "40px 20px 0 0",
+  lineHeight: '64px',
+  letterSpacing: '-2.6px',
+  margin: '40px 20px 0 0',
 };
 
 const mainContent = {
-  padding: "60px 0",
+  padding: '60px 0',
 };
 
 const paragraph = {
-  color: "#434355",
-  fontFamily: "Roboto Mono, Courier, sans-serif",
-  fontSize: "16px",
+  color: '#434355',
+  fontFamily: 'Roboto Mono, Courier, sans-serif',
+  fontSize: '16px',
   fontWeight: 400,
-  lineHeight: "24px",
-  textAlign: "left" as const,
+  lineHeight: '24px',
+  textAlign: 'left' as const,
 };
 
 const brandText = {
-  color: "#696BFF",
-  fontFamily: "Roboto Mono, Courier, sans-serif",
-  fontSize: "16px",
+  color: '#696BFF',
+  fontFamily: 'Roboto Mono, Courier, sans-serif',
+  fontSize: '16px',
   fontWeight: 700,
-  lineHeight: "24px",
+  lineHeight: '24px',
 };
 
 const email = {
-  color: "#434355!important",
-  fontFamily: "Roboto Mono, Courier, sans-serif",
-  fontSize: "16px",
+  color: '#434355!important',
+  fontFamily: 'Roboto Mono, Courier, sans-serif',
+  fontSize: '16px',
   fontWeight: 400,
-  lineHeight: "24px",
-  textDecoration: "underline",
-  cursor: "pointer",
+  lineHeight: '24px',
+  textDecoration: 'underline',
+  cursor: 'pointer',
 };
 
 const button = {
-  borderRadius: "16px",
-  background: "#696BFF",
-  marginTop: "60px",
-  color: "#FFF",
-  fontFamily: "Archivo Black, Arial Black, sans-serif",
-  fontSize: "16px",
+  borderRadius: '16px',
+  background: '#696BFF',
+  marginTop: '60px',
+  color: '#FFF',
+  fontFamily: 'Archivo Black, Arial Black, sans-serif',
+  fontSize: '16px',
   fontWeight: 400,
-  lineHeight: "24px",
+  lineHeight: '24px',
 };
